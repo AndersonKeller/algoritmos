@@ -1,4 +1,7 @@
 # algoritmos
+
+Nesta atividade vamos entender e praticar o uso das variáveis, e também do método console.log no JavaScript.
+
 Exercício 1
 
 Declare uma variável chamada “nome”;
