@@ -3,6 +3,7 @@ Exercício 1
 Declare uma variável chamada “nome”;
 Essa variável vai receber um valor do tipo string: o seu nome;
 Em seguida, imprima o seguinte no console: “Olá, eu sou a/o _seu-nome-aqui_”, utilizando a variável declarada anteriormente.
+
 Exercício 2
 Declare duas variáveis, uma chamada “nome” e outra chamada “sobrenome”;
 As duas vão receber um valor do tipo string. Na primeira atribua o seu nome, e na segunda atribua o seu sobrenome;
