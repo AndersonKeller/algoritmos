@@ -44,7 +44,7 @@ let operador = prompt(`Digite uma opção,
     2 - subtração, 
     3 - multiplicação, 
     4 - divisão`)
-if(operador != "1" || operador != "2" || operador != "3" || operador != "4"){
+if(operador != "1" && operador != "2" && operador != "3" && operador != "4"){
     alert("Operação inválida")
 }else {
     alert(operador)
