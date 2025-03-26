@@ -4,13 +4,13 @@ Exemplo
 Leia dois números inteiros, a e b, e faça com que eles troquem os valores entre si. Exiba os valores de a e b.
 
 Resolução
-let a = parseInt(prompt("Insira um valor para a"))
+``let a = parseInt(prompt("Insira um valor para a"))
 let b = parseInt(prompt("Insira um valor para b"))
 let aux = 0
 aux = a 
 a = b
 b = aux
-alert(`Os valores originais de a e b: ${b}, ${a}. Após a troca são: ${a}, ${b}`)
+alert(`Os valores originais de a e b: ${b}, ${a}. Após a troca são: ${a}, ${b}`)``
 
 Aviso
 O exercício acima é a base para resolução dos próximos. Não precisa retornar nada no console. 
