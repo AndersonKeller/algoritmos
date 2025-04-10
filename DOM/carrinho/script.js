@@ -3,15 +3,15 @@ const carrinho = []
 function montarProdutos(){
     const ul = document.querySelector("ul")
     produtos.forEach((produto)=>{
-        ul.insertAdjacentHTML("afterbegin",`
+        ul.insertAdjacentHTML("beforeend",`
              <li>
                 <p>${produto.name}</p>
                 <p>${produto.price}</p>
                 <p>${produto.descricao}</p>
-                <button>Adicionar ao carrinho</button>
+                <button id="${produto.id}add">Adicionar ao carrinho</button>
             </li>
             `)
-        const button = document.querySelector("button")
+        const button = document.getElementById(`${produto.id}add`)
         button.addEventListener("click",()=>{
             console.log("click",produto)
             carrinho.push(produto)
@@ -29,8 +29,22 @@ function montarCarrinho(carrinho=[]){
                <p>${produto.name}</p>
                <p>${produto.price}</p>
                <p>${produto.descricao}</p>
-               <button>Remover ao carrinho</button>
+               <button id="${produto.id}cancel">Remover ao carrinho</button>
            </li>
            `)
+           const button = document.getElementById(`${produto.id}cancel`)
+           button.addEventListener("click",(e)=>{
+            console.log(e,"event")
+            removerItemDoCarrinho(produto)
+           })
     })
+    
+}
+function removerItemDoCarrinho(produto){
+    console.log(produto,"produto")
+    const index = carrinho.findIndex((cart)=>{
+        return cart.id === produto.id
+    })
+    carrinho.splice(index,1)
+    montarCarrinho(carrinho)
 }
