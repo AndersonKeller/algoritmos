@@ -1,3 +1,5 @@
+https://github.com/buscape-company/exercicios/tree/master/frontend
+
 # algoritmos
 
 Nesta atividade vamos entender e praticar o uso das variáveis, e também do método console.log no JavaScript.
