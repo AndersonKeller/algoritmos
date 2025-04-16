@@ -1,5 +1,7 @@
 https://github.com/buscape-company/exercicios/tree/master/frontend
 
+https://leetcode.com/problems/two-sum/
+
 # algoritmos
 
 Nesta atividade vamos entender e praticar o uso das variáveis, e também do método console.log no JavaScript.
